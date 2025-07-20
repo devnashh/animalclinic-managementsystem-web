@@ -1,0 +1,369 @@
+/* Mobile devices (320px and up) */
+@media only screen and (max-width: 767px) {
+  /* Welcome Section */
+  .Welcome {
+    position: relative;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .UWelcome {
+    position: relative;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Video Section */
+  .VideoHolder {
+    position: relative;
+    top: 6rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .video {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Services Section */
+  .SWPTxt {
+    position: relative;
+    top: 6rem;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: red;
+  }
+
+  .SWPbox {
+    position: relative;
+    top: 6rem;
+    padding: 1rem;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .service-item {
+    width: 85%;
+    height: 65px;
+    margin: 0.2rem 0;
+    perspective: 1000px;
+  }
+
+  .service-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .service-item.flipped .service-item-inner {
+    transform: rotateY(180deg);
+  }
+
+  .service-front,
+  .service-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .service-front {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #389850;
+    border-radius: 40px;
+    z-index: 2;
+  }
+
+  .service-front img {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.8rem;
+    background: white;
+    padding: 0.4rem;
+    border-radius: 50%;
+  }
+
+  .service-front::after {
+    content: attr(data-title);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .service-back {
+    background: #389850;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .service-back h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    color: white;
+  }
+
+  .service-back p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .service-item:not(:last-child) {
+    border-bottom: 6px solid white;
+  }
+
+  /* Consultation Section */
+  .grid-container {
+    position: relative;
+    top: 1100rem;
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .image-holder img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: 1rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Ruler */
+  .Ruler {
+    position: relative;
+    top: 15rem;
+  }
+  .show {
+    display: flex !important;
+  }
+}
+
+/* Tablet devices (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Welcome {
+    font-size: 2.5rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .UWelcome {
+    font-size: 1.5rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .VideoHolder {
+    position: relative;
+    top: 8rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .video {
+    border-radius: 12px;
+  }
+
+  .service-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.8rem;
+    background-color: red;
+  }
+
+  .service-item {
+    flex: 0 0 45%;
+    margin: 0.5rem;
+    height: 250px;
+  }
+
+  .service-front img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .service-back {
+    padding: 1.8rem;
+  }
+
+  .service-back h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-back p {
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .SWPTxt {
+    position: relative;
+    top: 20rem;
+  }
+
+  .SWPbox {
+    position: relative;
+    top: 8rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Large tablets and small desktops */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .service-container {
+    max-width: 1000px;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    background-color: red;
+  }
+
+  .service-item {
+    flex: 0 0 30%;
+    margin: 0.5rem;
+    height: 280px;
+  }
+
+  .service-front img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .VideoHolder {
+    position: absolute;
+    top: 15rem;
+    right: 3rem;
+    width: 45%;
+    transform: none;
+  }
+
+  .Welcome {
+    width: 45%;
+    left: 3rem;
+    transform: none;
+  }
+
+  .UWelcome {
+    width: 45%;
+    left: 3rem;
+    transform: none;
+  }
+
+  .SWPTxt {
+    position: relative;
+    margin-top: 35rem;
+    clear: both;
+  }
+
+  .SWPbox {
+    position: relative;
+    margin-top: 2rem;
+  }
+}
+
+/* Desktop devices (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .service-container {
+    max-width: 1400px;
+    gap: 2rem;
+    font-size: 1.8rem;
+    background-color: red;
+  }
+
+  .service-item {
+    flex: 0 0 280px;
+    height: 300px;
+    margin: 0.5rem;
+  }
+
+  .service-front img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .VideoHolder {
+    position: absolute;
+    top: 15rem;
+    right: 5rem;
+    width: 40%;
+    transform: none;
+  }
+
+  .Welcome {
+    width: 45%;
+    left: 5rem;
+    transform: none;
+  }
+
+  .UWelcome {
+    width: 45%;
+    left: 5rem;
+    transform: none;
+  }
+  .show {
+    display: flex !important;
+  }
+}
