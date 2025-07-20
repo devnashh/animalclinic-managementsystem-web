@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Validate reCAPTCHA
-    $recaptchaSecret = '6Lc8deQqAAAAAFBxZyO0_s1Vwc2JVRCxxTYdjORR';
-    $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptchaSecret = '';
+    $recaptchaUrl = '';
     $response = file_get_contents($recaptchaUrl . '?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse);
     $responseKeys = json_decode($response, true);
 

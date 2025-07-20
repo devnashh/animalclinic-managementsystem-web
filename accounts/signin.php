@@ -200,7 +200,7 @@ session_start();
                     </div>
                     <!-- Add reCAPTCHA -->
                     <!-- <div class="mt-3 mb-3">
-                        <div class="g-recaptcha" data-sitekey="6Lc8deQqAAAAAGxfozVubi_pj-DmO58g_7G2CP6d"></div>
+                        <div class="g-recaptcha" data-sitekey=""></div>
                     </div> -->
                 </div>
                 <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
